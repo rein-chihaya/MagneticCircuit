@@ -1,0 +1,66 @@
+% !TEX root =../BasicMagneticCircuitAnalysis.tex
+\chapter{磁気回路}
+\subsection{磁気回路でのオームの法則}
+\begin{Definition}[起磁力]
+\ \\
+　コイルに発生する磁束は電流$I$と巻数$N$に比例して発生する．
+\begin{align}
+\begin{split}
+F_{m}=NI \mathrm{[A]}
+\end{split}
+\end{align}
+このとき，$F_{m}$を起磁力という．
+\end{Definition}
+
+\begin{Theorem}[ホプキンソンの法則]
+\ \\
+　起磁力$NI$と磁束$\phi$間の関係を定数$R_{m}$を用い
+\begin{align}
+NI=R_{m}\phi \mathrm{[A]}
+\end{align}
+と表す．ここで比例定数$R_{m}$を磁気抵抗という．この関係をホプキンソンの法則という．
+\end{Theorem}
+
+\begin{Definition}[パーミアンス]
+\ \\
+　磁気抵抗$R_{m}$の逆数をパーミアンスといい，$\Lambda$を用いて
+\begin{align}
+\begin{split}
+\Lambda =\frac{1}{R_{m}} \mathrm{[H]}
+\end{split}
+\end{align}
+このとき，$F_{m}$を起磁力という．
+\end{Definition}
+
+\begin{Definition}[材料の持つ磁気抵抗]
+\ \\
+　一様な磁気材料において，その磁気抵抗は$R_{m}$は
+\begin{align}
+\begin{split}
+R_{m} &=\frac{1}{\mu A}\\
+&= \frac{1}{\mu_{0} \mu_{s}  A} \mathrm{[A/Wb]}
+\end{split}
+\end{align}
+このとき，$F_{m}$を起磁力という．
+\end{Definition}
+
+\section{アンペールの法則}
+\begin{Theorem}[アンペールの法則]
+\begin{align}
+\begin{split}
+\oint_c \bm{H} \cdot d \bm{l} = \int_s \bm{J} \cdot d \bm{S} = I[A]
+\end{split}
+\end{align}
+\end{Theorem}
+
+直線状導体の磁界
+\begin{align}
+\begin{split}
+&H = \dfrac{I}{2 \pi r} \hspace{3mm} \mathrm{[A/m]} 
+\end{split}
+\end{align}
+
+環状コイルの中心磁界\\
+\begin{align}
+H=\frac{NI}{2r}\mathrm{[A/m]}
+\end{align}

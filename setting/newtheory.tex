@@ -1,0 +1,48 @@
+% !TEX root =../main.tex
+\usepackage[framed,thmmarks]{ntheorem}
+\makeatletter
+\def\newoframedtheorem#1{%
+  \theoremprework{\oframed}%         %%
+  \theorempostwork{\endoframed}%     %%
+  \newtheorem@i{#1}%
+  }
+\usepackage{framed}
+\usepackage{color}
+
+\newtheorem{exam}{例}[section]
+\theoremclass{exam}
+\theoremstyle{break}
+\newframedtheorem{myexam}[exam]{例}
+
+\theorembodyfont{\normalfont}
+
+\theoremstyle{plain}
+\theoremseparator{.}
+
+\newtheorem{Axion}{公理}[section]
+\newtheorem{Definition}{定義}[section]
+\newtheorem{Theorem}{定理}[section]
+\theoremclass{Theorem}
+\theoremstyle{break}
+\newframedtheorem{mytheorem}[Theorem]{定理}
+
+\def\theoremframecommand{\colorbox{cyan}} 
+\theoremstyle{changebreak}
+\newtheorem{Lemma}{補助定理}[section]
+\newshadedtheorem{mylemma}[Lemma]{補助定理}
+
+\newtheorem{plac}{演習}[section]
+\theoremclass{plac}
+\newframedtheorem{myplac}[plac]{演習}
+
+\theoremstyle{nonumberplain}
+\theoremseparator{}
+\newtheorem{Proof}{証明}
+
+\theoremstyle{nonumberplain}
+\theoremseparator{}
+\newtheorem{ans}{解}
+
+\theoremstyle{nonumberplain}
+\theoremseparator{}
+\newtheorem{Proposition}{命題}
